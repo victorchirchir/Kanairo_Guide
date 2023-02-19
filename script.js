@@ -14,7 +14,7 @@ var openTopoMap=L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', 
 	minZoom: 0,
 	maxZoom: 20,
 	ext: 'png'
-}).addTo(map);
+})
 
 
 //add turbo overpass layer
@@ -28,7 +28,7 @@ var osm = new L.TileLayer(
         'opacity': 0.7,
         'attribution': [attr_osm, attr_overpass].join(', ')
     }
-);
+).addTo(map);
 
 // var map = new L.Map('map')
 // .addLayer(osm)
